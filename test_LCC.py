@@ -5,9 +5,7 @@ by performing some commands defined in control_LCC.py.
 @author: Luc Dümpelmann
 """
 
-import control_LCC
-import os, time
-from ctypes import *
+
 
 LCC=control_LCC.LCCRetard()                     # connect to the device with serial number set
 

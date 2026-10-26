@@ -16,7 +16,7 @@ class LCCRetard():
 	def __init__(self, SerialNum = None):    
 		# # =========================================================
 		#Load dll file (select 32 or 64 bit version)
-		self.dll_handle = windll.LoadLibrary('uart_library_ftdi64.dll')
+		self.dll_handle = windll.LoadLibrary(r"C:/Program Files (x86)/Thorlabs/LCC2415-VIS/Help/LCC2415_VIS C++ SDK/uart_library_ftdi64.dll")#'uart_library_ftdi64.dll')
 		# =========================================================
 		self.openP=self.dll_handle.fnUART_LIBRARY_open
 		self.isOpen=self.dll_handle.fnUART_LIBRARY_isOpen
